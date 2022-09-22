@@ -1,0 +1,58 @@
+/* 헤더 */
+header {
+  /* min-height: 100px; */
+}
+
+.header__container1 {
+  background-color: #39394d;
+}
+
+.header__container1 .inner {
+  height: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header__container1 .inner ul {
+  display: flex;
+}
+.header__container1 .inner ul li {
+  margin-left: 15px;
+}
+
+.header__container2 {
+  height: 60px;
+  color: #777;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  border-bottom: 1px solid #333;
+}
+.header__container2 .inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header__container2__item {
+  display: flex;
+  align-items: center;
+}
+
+.header__container2__item ul {
+  display: flex;
+  align-items: center;
+}
+
+.header__container2__item ul li {
+  margin: 10px;
+}
+.header__container2 .zoom-logo {
+  height: 25px;
+  margin-right: 20px;
+}
+
+.header__container2__item .btn {
+  height: 34px;
+  width: 111px;
+}

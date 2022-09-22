@@ -1,0 +1,21 @@
+/* 공통 */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4; /* 글높이는 글자 높이의 1.4배 */
+  font-family: "Nanum Gothic", sans-serif;
+}
+img {
+  /* base라인 밑의 빈공간을 없애준다 */
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+.inner {
+  /* 너비와 마진auto 를 결합하면 가운데 정렬 */
+  width: 90vw;
+  margin: 0 auto;
+  position: relative;
+}

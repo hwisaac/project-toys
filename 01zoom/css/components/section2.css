@@ -1,0 +1,37 @@
+.section2 {
+  height: 800px;
+}
+.section2 .inner {
+  display: flex;
+}
+.section2 .inner > * {
+  margin: 150px;
+}
+.section2 .inner .zoom-circle {
+  width: 518px;
+  height: 518px;
+  border: 1px solid red;
+}
+.section2 .inner .texts {
+  width: 518px;
+  height: 518px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid red;
+}
+.section2 .inner .texts > * {
+  margin: 15px 0;
+}
+.section2 .inner .texts h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.section2 .inner .texts div {
+  background-color: #ff742e;
+  width: 70px;
+  height: 5px;
+}
+.section2 .inner .texts p {
+}

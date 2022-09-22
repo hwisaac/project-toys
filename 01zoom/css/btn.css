@@ -1,0 +1,28 @@
+/* 버튼 */
+.btn {
+  background-color: #f26d21;
+  color: white;
+  font-size: 17px;
+  width: 180px;
+  height: 45px;
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 13px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+}
+.btn:hover {
+  background-color: #da621e;
+}
+.btn.btn--white {
+  color: black;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.btn.btn--white:hover {
+  background-color: #ffebda;
+  border-color: #ffebda;
+}
