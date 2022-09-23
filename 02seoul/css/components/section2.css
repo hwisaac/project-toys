@@ -10,6 +10,9 @@
   grid-template-columns: 80px 1fr;
   grid-template-areas: "toggle-up display" "toggle-down display";
 }
+.section2 .inner .inner-left:hover {
+  cursor: pointer;
+}
 .section2 .inner .inner-left .display {
   background-color: orange;
   grid-area: display;

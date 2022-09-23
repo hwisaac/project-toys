@@ -34,3 +34,7 @@ a {
   border: 1px dashed red; /*삭제*/
   position: relative;
 }
+h2 {
+  font-weight: 700;
+  font-size: 22px;
+}
