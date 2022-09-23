@@ -1,3 +1,4 @@
+/* Base */
 @import url(./reset.css);
 @import url(./common.css);
 @import url(./btn.css);
@@ -14,7 +15,4 @@
 @import url(./components/section8.css);
 @import url(./components/section9.css);
 @import url(./components/section10.css);
-
-body {
-  height: 6000px;
-}
+@import url(./components/footer.css);

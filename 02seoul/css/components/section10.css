@@ -1,0 +1,23 @@
+.section10 {
+  margin-top: 80px;
+}
+.section10 .inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-top: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+}
+.section10 .inner .item {
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-right: 1px solid #d0d0d0;
+  font-size: 14px;
+}
+.section10 .inner .item .title {
+}
+.section10 .inner .item .material-icons {
+}

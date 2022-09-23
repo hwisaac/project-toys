@@ -19,19 +19,21 @@ a {
   margin: 0 auto;
   position: relative;
   display: flex;
-  border: 1px dashed orange; /*삭제*/
+
+  /*삭제 */
+  /* border: 1px dashed orange; */
 }
 .inner-left {
   width: 785px;
   display: flex;
-  border: 1px dashed blue; /*삭제*/
+  /* border: 1px dashed blue; */
   position: relative;
 }
 .inner-right {
   padding-left: 20px;
   width: 370px;
   display: flex;
-  border: 1px dashed red; /*삭제*/
+  /* border: 1px dashed red;  */
   position: relative;
 }
 h2 {
