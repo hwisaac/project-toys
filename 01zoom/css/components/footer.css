@@ -1,0 +1,146 @@
+footer {
+  height: 383px;
+  width: 100vw;
+  background-color: #39394d;
+  color: white;
+  font-size: 10px;
+  padding-top: 25px;
+}
+footer .inner {
+  width: 1086px;
+}
+footer .inner .row-first {
+  display: flex;
+}
+footer .inner .row-first ul {
+  width: 155px;
+  margin-right: 15px;
+}
+footer .inner .row-first ul li {
+  margin-bottom: 2px;
+}
+footer .inner .row-first ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .inner .row-first ul li.title {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+footer #money {
+  margin-top: 20px;
+}
+footer .inner .row-first ul li.sns-icons {
+  display: flex;
+  position: absolute;
+  column-gap: 3px;
+  margin-top: 10px;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(1) {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat 0 0;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(1):hover {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat 0 -36px;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(2) {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat -45px 0;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(2):hover {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat -45px -36px;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(3) {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat -90px 0;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(3):hover {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat -90px -36px;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(4) {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat -134px 0;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(4):hover {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat -134px -36px;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(5) {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat -179px 0;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(5):hover {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat -179px -36px;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(6) {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat -224px 0;
+}
+footer .inner .row-first ul li.sns-icons .icon:nth-child(6):hover {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url("../../images/footer-snsicon.png") no-repeat -224px -36px;
+}
+footer .inner .row-second {
+  display: flex;
+  margin-top: 40px;
+}
+footer .inner .row-second span {
+  font-weight: 700;
+}
+footer .inner .row-second ul {
+  display: flex;
+}
+footer .inner .row-second ul li {
+  position: relative;
+  margin-left: 10px;
+}
+footer .inner .row-second ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .inner .row-second ul li::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  position: absolute;
+  margin: auto;
+}
+footer .inner .row-second ul li:first-child:before {
+  display: none;
+}
+footer .inner .row-second ul li {
+}

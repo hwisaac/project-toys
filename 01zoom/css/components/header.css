@@ -1,6 +1,9 @@
 /* 헤더 */
 header {
   /* min-height: 100px; */
+  position: fixed;
+  z-index: 10;
+  width: 100%;
 }
 
 .header__container1 {
@@ -13,21 +16,25 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width: 1390px;
 }
 .header__container1 .inner ul {
   display: flex;
 }
 .header__container1 .inner ul li {
   margin-left: 15px;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .header__container2 {
+  background-color: white;
   height: 60px;
   color: #777;
   display: flex;
   align-items: center;
   font-weight: 700;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .header__container2 .inner {
   display: flex;
@@ -37,13 +44,19 @@ header {
 .header__container2__item {
   display: flex;
   align-items: center;
+  font-size: 12px;
 }
 
 .header__container2__item ul {
   display: flex;
   align-items: center;
 }
-
+.header__container2__item:nth-child(2) ul li {
+  color: #2073d9;
+}
+.header__container2__item:nth-child(2) ul li:last-child {
+  color: white;
+}
 .header__container2__item ul li {
   margin: 10px;
 }
@@ -55,4 +68,5 @@ header {
 .header__container2__item .btn {
   height: 34px;
   width: 111px;
+  font-size: 14px;
 }

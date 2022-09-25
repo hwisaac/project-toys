@@ -17,12 +17,32 @@
 .btn:hover {
   background-color: #da621e;
 }
+.btn:active {
+  background-color: #c2571a;
+}
 .btn.btn--white {
   color: black;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: 400;
 }
 .btn.btn--white:hover {
   background-color: #ffebda;
   border-color: #ffebda;
+}
+.btn.btn--white:active {
+  background-color: #ffd3ac;
+}
+
+.btn--toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  height: 26px;
+
+  width: fit-content;
+  padding-left: 15px;
+  padding-right: 10px;
 }
