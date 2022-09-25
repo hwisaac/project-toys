@@ -5,6 +5,7 @@ body {
   font-weight: 400;
   line-height: 1.4; /* 글높이는 글자 높이의 1.4배 */
   font-family: "Nanum Gothic", sans-serif;
+  /* position: relative; */
 }
 img {
   /* base라인 밑의 빈공간을 없애준다 */

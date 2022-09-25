@@ -12,6 +12,27 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- LODASH  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+      integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- GSAP-Scroll To Top  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"
+      integrity="sha512-lFUdnIP0VHYatqtK0Mni2SDBS62JtUUPq9F26a/SDPZMHoGp3E1WO9gHXu1DddaN1ig1fn4mvHAqJ4x0kauKQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- 구글 머터리얼 아이콘 추가 -->
     <link
       rel="stylesheet"
@@ -649,7 +670,7 @@
     <!-- SECTION 10   메뉴 펼치기 기능 필요-->
     <section class="section10">
       <div class="inner">
-        <div class="display">
+        <div class="display hide">
           <ul class="first">
             <li>서울시립대학교</li>
             <li>보건환경연구원</li>
@@ -753,22 +774,22 @@
             <li>제주특별자치도</li>
           </ul>
         </div>
-        <div class="item">
+        <div class="item" id="s10-0">
           <span class="title">직속기관 사업소</span>
           <div class="material-icons">expand_less</div>
         </div>
-        <div class="item">
+        <div class="item" id="s10-1">
           <span class="title">공사 출연기관</span>
           <div class="material-icons">expand_less</div>
         </div>
-        <div class="item">
+        <div class="item" id="s10-2">
           <span class="title">자치구</span>
           <div class="material-icons">expand_less</div>
         </div>
         <div class="item">
           <span class="title">중앙행정기관</span>
         </div>
-        <div class="item">
+        <div class="item" id="s10-4">
           <span class="title">지방자치단체 유관기관</span>
           <div class="material-icons">expand_less</div>
         </div>
@@ -823,8 +844,10 @@
       </div>
     </footer>
     <!-- gotop 버튼 -->
-    <div id="to-top">
-      <img src="./images/btn_gotop.png" alt="go-top 버튼" />
+    <div class="right-side-area">
+      <div id="to-top">
+        <img src="./images/btn_gotop.png" alt="go-top 버튼" />
+      </div>
     </div>
   </body>
 </html>

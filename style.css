@@ -1,0 +1,7 @@
+.inner {
+  width: 1200px;
+  /* border: 1px solid red; */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}

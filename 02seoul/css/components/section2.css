@@ -21,7 +21,6 @@
 .section2 .inner .inner-left .display .display-up {
   height: 100%;
   width: 100%;
-  background-color: yellow;
   position: absolute;
   /* visibility: hidden; */
   display: none;

@@ -1,3 +1,33 @@
+// 스크롤
+const toTopEl = document.querySelector(".right-side-area #to-top");
+console.log(toTopEl);
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 0) {
+      //   gsap.to(요소, 지속시간s, 요소) 해당요소가 지속시간에 걸쳐 요소에 해당하는 설정이 됨.
+      //스크롤 버튼 나타나기
+      gsap.to(toTopEl, 0.2, {
+        y: 0,
+        opacity: 1,
+      });
+    } else {
+      //스크롤 버튼 오른쪽으로 숨기기
+      gsap.to(toTopEl, 0.2, {
+        y: 100,
+        opacity: 0,
+      });
+    }
+  }, 300) // _throttle(함수, 지연시간ms) 는 함수를 천천히 실행되게 만든다.
+);
+
+toTopEl.addEventListener("click", function () {
+  //윈도우를 0.7초 동안
+  gsap.to(window, 0.4, {
+    scrollTo: 0, // 스크롤의 위치를 0으로
+  });
+});
+
 // section2 토글 설정
 // display 스와이프
 const s2_displaySwiperUp = new Swiper(".section2 .display-up .swiper", {
@@ -130,7 +160,7 @@ function s2HandleTogUp(event) {
 s2_togDown.addEventListener("click", s2HandleTogDown);
 s2_togUp.addEventListener("click", s2HandleTogUp);
 
-// section9
+//////////////////////////////////////////////////////////////////////// section9
 const section9_swiper = new Swiper(".section9 .swiper", {
   autoplay: {
     delay: 3000, //(단위:ms) 3초 딜레이로 자동재생
@@ -169,30 +199,31 @@ function s9ToggleHandle(event) {
 playToggleEl.addEventListener("click", s9ToggleHandle);
 
 // 바디클릭 테스트
-const bodyClick = document.querySelector("body");
-function handleBodyClick(event) {
-  console.log(event.target);
-}
-bodyClick.addEventListener("click", handleBodyClick);
+// const bodyClick = document.querySelector("body");
+// function handleBodyClick(event) {
+//   console.log(event.target);
+// }
+// bodyClick.addEventListener("click", handleBodyClick);
 
-//section10
-//버튼눌러서 hide 없앴다 생겼다 해주기
-const displayEl = document.querySelector(".section10 .inner .display");
-let toggleDisplay = false;
-
-// s10_btn1.addEventListener("click", function () {
-//   if (toggleDisplay) {
-//     displayEl.classList.add("hide");
-//   } else {
-//     displayEl.classList.remove("hide");
-//   }
-// });
-
+///////////////////////////////////////////////////////////////////////// section10
 //펼치기할 버튼
 const s10_btn1 = document.querySelector(".section10 .item:nth-child(2)");
 const s10_btn2 = document.querySelector(".section10 .item:nth-child(3)");
 const s10_btn3 = document.querySelector(".section10 .item:nth-child(4)");
 const s10_btn5 = document.querySelector(".section10 .item:nth-child(6)");
+//display 에 표시할 ul
+const s10_ul1 = document.querySelector(".section10 .display .first");
+const s10_ul2 = document.querySelector(".section10 .display .second");
+const s10_ul3 = document.querySelector(".section10 .display .third");
+const s10_ul5 = document.querySelector(".section10 .display .fifth");
+// 리스트화
+const s10_btns = [s10_btn1, s10_btn2, s10_btn3, null, s10_btn5];
+const s10_uls = [s10_ul1, s10_ul2, s10_ul3, null, s10_ul5];
+let s10_displayBools = [false, false, false, false, false];
+
+//버튼눌러서 .display에 .hide 없앴다 생겼다 해주기
+const displayEl = document.querySelector(".section10 .inner .display");
+let toggleDisplay = false;
 
 //버튼이 클릭돼있으면 true 반환. 아니면 false
 function isClicked(s10_btn) {
@@ -203,71 +234,76 @@ function isClicked(s10_btn) {
     return false;
   }
 }
-//버튼1 핸들
-function handleBtn1(event) {
-  if (isClicked(s10_btn1)) {
-    //클릭 됐으면 클래스 삭제
-    s10_btn1.classList.remove("clicked");
-  } else {
-    //클릭 안됐으면 클릭추가
-    s10_btn1.classList.add("clicked");
-    //나머지는 클릭제거
-    s10_btn2.classList.remove("clicked");
-    s10_btn3.classList.remove("clicked");
-    s10_btn5.classList.remove("clicked");
+//모든 clicked 삭제함수
+function removeAllClicked() {
+  for (let i = 0; i < 5; i++) {
+    if (i !== 3) {
+      s10_btns[i].classList.remove("clicked");
+    }
   }
-  toggleDisplay = !toggleDisplay;
-  if (toggleDisplay) {
+}
+//모든 ul 감추기 함수
+function hideAllUl() {
+  for (let i = 0; i < 5; i++) {
+    if (i !== 3) {
+      // display: grid -> none
+      s10_uls[i].classList.remove("show");
+    }
+  }
+}
+
+//디스플레이 내용물 표시
+function handleDisplayByOrder(btnOrder) {
+  // 이미 다른 버튼에 의해 열려있었다면, 닫아준다.
+  for (let i = 0; i < 5; i++) {
+    if (btnOrder !== i && s10_displayBools[i] === true) {
+      console.log(i, "가 열려있길래 닫았어요!");
+      displayEl.classList.add("hide");
+      s10_displayBools[i] = false;
+      console.log(s10_displayBools);
+    }
+  }
+
+  if (s10_displayBools[btnOrder]) {
+    // 열려있으면 닫아준다.
+    console.log(btnOrder, "닫았어요!");
     displayEl.classList.add("hide");
+    s10_displayBools[btnOrder] = false;
+    console.log(s10_displayBools);
   } else {
+    // 닫혀있으면 열어준다.
+    console.log(btnOrder, "열었어요!");
     displayEl.classList.remove("hide");
+    s10_displayBools[btnOrder] = true;
+    console.log(s10_displayBools);
   }
 }
-s10_btn1.addEventListener("click", handleBtn1);
+
+//버튼 핸들
+function handleBtn(event) {
+  let btnOrder = Number(this.id[this.id.length - 1]);
+  hideAllUl(); // 모든 ul 없앤 후
+  s10_uls[btnOrder].classList.add("show"); // 원하는 순서의 ul 보여주기
+
+  if (isClicked(this)) {
+    //클릭 됐으면 클래스 삭제
+    this.classList.remove("clicked");
+  } else {
+    //클릭 안됐을 경우
+    removeAllClicked(); // 우선 모든 clicked 제거 후
+    this.classList.add("clicked"); // clicked 추가
+  }
+
+  //디스플레이 열고 닫기
+  handleDisplayByOrder(btnOrder);
+}
+s10_btns[0].addEventListener("click", handleBtn);
+
 //버튼2 핸들
-function handleBtn2(event) {
-  if (isClicked(s10_btn2)) {
-    //클릭 됐으면 클래스 삭제
-    s10_btn2.classList.remove("clicked");
-  } else {
-    //클릭 안됐으면 추가
-    s10_btn2.classList.add("clicked");
-    //나머지는 클릭제거
-    s10_btn1.classList.remove("clicked");
-    s10_btn3.classList.remove("clicked");
-    s10_btn5.classList.remove("clicked");
-  }
-  console.log(event);
-}
-s10_btn2.addEventListener("click", handleBtn2);
+s10_btns[1].addEventListener("click", handleBtn);
+
 //버튼3 핸들
-function handleBtn3(event) {
-  if (isClicked(s10_btn3)) {
-    //클릭 됐으면 클래스 삭제
-    s10_btn3.classList.remove("clicked");
-  } else {
-    //클릭 안됐으면 추가
-    s10_btn3.classList.add("clicked");
-    //나머지는 클릭제거
-    s10_btn1.classList.remove("clicked");
-    s10_btn2.classList.remove("clicked");
-    s10_btn5.classList.remove("clicked");
-  }
-}
-s10_btn3.addEventListener("click", handleBtn3);
+s10_btns[2].addEventListener("click", handleBtn);
+
 //버튼5 핸들
-function handleBtn5(event) {
-  if (isClicked(s10_btn5)) {
-    //클릭 됐으면 클래스 삭제
-    s10_btn5.classList.remove("clicked");
-  } else {
-    //클릭 안됐으면 추가
-    s10_btn5.classList.add("clicked");
-    //나머지는 클릭제거
-    s10_btn1.classList.remove("clicked");
-    s10_btn3.classList.remove("clicked");
-    s10_btn2.classList.remove("clicked");
-  }
-  console.log(event);
-}
-s10_btn5.addEventListener("click", handleBtn5);
+s10_btns[4].addEventListener("click", handleBtn);

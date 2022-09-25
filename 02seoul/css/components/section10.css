@@ -34,13 +34,18 @@
   /* overflow: hidden;  */
 }
 /*안보이게 가려놓기*/
-/* .section10 .inner .display ul.first, */
+.section10 .inner .display ul.first,
 .section10 .inner .display ul.second,
 .section10 .inner .display ul.third,
 .section10 .inner .display ul.fifth {
   display: none;
 }
-
+.section10 .inner .display ul.first.show,
+.section10 .inner .display ul.second.show,
+.section10 .inner .display ul.third.show,
+.section10 .inner .display ul.fifth.show {
+  display: grid;
+}
 .section10 .inner .display ul li {
   /* border: 1px solid red; */
   font-size: 14px;

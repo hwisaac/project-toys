@@ -126,6 +126,7 @@ footer .inner .row-lower .column-left .call-me {
   height: 70px;
   padding: 3px;
   box-sizing: border-box;
+  pointer-events: none;
 }
 
 footer .inner .row-lower .column-left .call-me .title {
@@ -136,6 +137,7 @@ footer .inner .row-lower .column-left .call-me .phone {
 }
 footer .inner .row-lower .column-left .call-me p {
   font-size: 1px;
+  font-weight: 400;
 }
 footer .inner .row-lower .column-left ul {
   padding-left: 30px;
@@ -154,4 +156,7 @@ footer .inner .row-lower .column-right {
 }
 footer .inner .row-lower .column-right img {
   margin-left: 20px;
+}
+footer .inner .row-lower .column-right img:hover {
+  cursor: pointer;
 }
