@@ -1,0 +1,40 @@
+.section4 {
+  margin-top: 300px;
+  display: flex;
+  height: 275px;
+}
+.section4 .column-left {
+  height: 275px;
+  width: 37vw;
+  background-color: #323244;
+  display: flex;
+  flex-direction: column;
+  padding: 0 70px;
+}
+.section4 .column-left h2 {
+  margin-top: 56px;
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
+}
+.section4 .column-left .pagination {
+}
+.section4 .column-right {
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+}
+.section4 .column-right .swiper {
+  height: 100%;
+  width: 57vw;
+  margin-left: 20px;
+  background-color: red;
+}
+.section4 .column-right .swiper .swiper-wrapper {
+}
+.section4 .column-right .swiper .swiper-wrapper .swiper-slide {
+}

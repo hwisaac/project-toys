@@ -1,0 +1,12 @@
+.section5 {
+  padding: 170px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.section5 .btn {
+  margin: 10px;
+}
+
+.section5 .btn.btn--white {
+}

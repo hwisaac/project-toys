@@ -15,7 +15,18 @@ a {
 }
 .inner {
   /* 너비와 마진auto 를 결합하면 가운데 정렬 */
-  width: 90vw;
+  width: 1390px;
   margin: 0 auto;
   position: relative;
+}
+.bar-orange {
+  background-color: #ff742e;
+  width: 70px;
+  height: 5px;
+}
+.shadow {
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+}
+.display-none {
+  display: none;
 }

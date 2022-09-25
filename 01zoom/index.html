@@ -13,8 +13,17 @@
     <link rel="stylesheet" href="./css/main.css" />
     <!-- 스타일 -->
     <link defer rel="stylesheet" href="./css/style.css" />
+    <!-- 스크립트  -->
+    <!-- SWIPER : 슬라이드 모션-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
+    <!-- HEADER  -->
     <header>
       <div class="header__container1">
         <div class="inner">
@@ -28,7 +37,9 @@
       <div class="header__container2">
         <div class="inner">
           <div class="header__container2__item">
-            <img src="./images/ZoomLogo.png" alt="" class="zoom-logo" />
+            <a href="https://zoom.us/" target="_blank"
+              ><img src="./images/ZoomLogo.png" alt="" class="zoom-logo"
+            /></a>
             <ul>
               <li>솔루션</li>
               <li>요금제 및 가격 책정</li>
@@ -47,7 +58,7 @@
         </div>
       </div>
     </header>
-
+    <!-- section1  -->
     <section class="section1">
       <div class="left">
         <h2>Zoom: 가트너 2019 매직 쿼드런트에서 회의 솔루션 분야 리더</h2>
@@ -55,12 +66,14 @@
       </div>
       <div class="right"></div>
     </section>
+
+    <!-- SECTION 2  -->
     <section class="section2">
       <div class="inner">
         <img src="./images/zoomCircle.png" alt="" class="zoom-circle" />
         <div class="texts">
           <h2>Zoom은 여러분을 위한 것입니다.</h2>
-          <div class="div"></div>
+          <div class="bar-orange"></div>
           <p>
             Zoom은 사용자가 연결하고, 커뮤니케이션하고, 아이디어를 표현함으로써
             모두가 함께 더 많은 일을 성취할 수 있도록 지원합니다. 수백만의
@@ -70,5 +83,165 @@
         </div>
       </div>
     </section>
+
+    <!-- SECTION 3  -->
+    <section class="section3">
+      <div class="left-bg"></div>
+      <div class="row-first">
+        <div class="text-box">
+          <h2>Zoom, 고객 평가에서 1위 기록</h2>
+          <div class="bar-orange"></div>
+          <span>고객들이 Zoom을 사랑하는 이유를 알아보세요</span>
+          <div class="btn btn--white">왜 Zoom일까요</div>
+        </div>
+        <div class="container">
+          <div class="item">
+            <img src="./images/section3-icon1.png" alt="" class="logo" />
+            <img src="./images/section3-stars4.5.png" alt="" class="star" />
+            <span class="counts">6.5K</span>
+            <a href="javascript:void(0)" class="more">더 알아보기</a>
+          </div>
+          <div class="item">
+            <img src="./images/section3-icon2.png" alt="" class="logo" />
+            <img src="./images/section3-stars4.5.png" alt="" class="star" />
+            <span class="counts">1.8K</span>
+            <a href="javascript:void(0)" class="more">더 알아보기</a>
+          </div>
+          <div class="item">
+            <img src="./images/section3-icon3.png" alt="" class="logo" />
+            <img src="./images/section3-stars4.5.png" alt="" class="star" />
+            <span class="counts">32K</span>
+            <a href="javascript:void(0)" class="more">더 알아보기</a>
+          </div>
+        </div>
+      </div>
+      <div class="row-second">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="half-left">
+                <img src="#" class="circle-pic" alt="" />
+                <p class="comment"></p>
+                <span class="from"></span>
+                <img src="#" class="circle-play" alt="" />
+              </div>
+              <div class="half-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">section3 PAGINATION</div>
+    </section>
+
+    <!-- SECTION4  -->
+    <section class="section4">
+      <div class="column-left">
+        <h2>첨단 기술 회사가 신뢰하는 Zoom</h2>
+        <div class="pagination"></div>
+      </div>
+      <div class="column-right">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION5   -->
+    <section class="section5">
+      <div class="btn btn--white">데모 요청</div>
+      <div class="btn">지금 구입</div>
+    </section>
+
+    <!-- footer   -->
+    <footer>
+      <div class="inner">
+        <div class="row-first">
+          <ul>
+            <li class="title">정보</li>
+            <li>Zoom 블로그</li>
+            <li>Zoom 팀</li>
+            <li>채용 정보</li>
+
+            <li>통합</li>
+            <li>파트너</li>
+
+            <li>Investor</li>
+            <li>보도 자료</li>
+            <li>ESG 책임</li>
+            <li>Media Kit</li>
+            <li>방법 비디오</li>
+            <li>개발자 플랫폼</li>
+          </ul>
+          <ul>
+            <li class="title">다운로드</li>
+            <li>회의 클라이언트</li>
+            <li>Zoom Rooms 클라이언트</li>
+            <li>브라우저 확장</li>
+            <li>Outlook 플러그인</li>
+            <li>Lync 플러그인</li>
+            <li>Android 앱</li>
+            <li>Zoom 가상 배경</li>
+          </ul>
+          <ul>
+            <li class="title">영업</li>
+            <li>1.888.799.9666</li>
+            <li>영업에 문의</li>
+            <li>요금제 및 가격 책정</li>
+            <li>데모 요청</li>
+            <li>웨비나 및 이벤트</li>
+          </ul>
+          <ul>
+            <li class="title">지원</li>
+            <li>Zoom 테스트</li>
+            <li>계정</li>
+            <li>지원 센터</li>
+            <li>라이브 교육</li>
+            <li>피드백</li>
+            <li>문의처</li>
+            <li>접근성</li>
+            <li>개발자 지원</li>
+            <li>
+              개인정보 보호, 보안, 법률정책 및 현대 노예금지법 투명성 선언
+            </li>
+          </ul>
+          <ul>
+            <li class="title">언어</li>
+            <li class="btn--toggle">
+              한국어 <span class="material-icons">arrow_drop_down</span>
+            </li>
+            <li class="title money" id="money">통화</li>
+            <li class="btn--toggle">
+              미국 달러$ <span class="material-icons">arrow_drop_down</span>
+            </li>
+            <li class="sns-icons">
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="row-second">
+          <span
+            >Copyright ©2022 Zoom Video Communications, Inc. All rights
+            reserved.</span
+          >
+          <ul>
+            <li>약관</li>
+            <li>개인정보 보호</li>
+            <li>신뢰 센터</li>
+            <li>커뮤니티 표준</li>
+            <li>법률 및 규정 준수</li>
+            <li>개인 정보 판매 금지</li>
+            <li>쿠키 기본설정</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
