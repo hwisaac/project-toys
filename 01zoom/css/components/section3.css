@@ -95,16 +95,149 @@
 .section3 .row-second .swiper .swiper-wrapper .swiper-slide .half-left {
   width: 50%;
   height: 100%;
+  padding: 40px;
+  position: relative;
+}
+.section3
+  .row-second
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .half-left
+  .circle-pic {
+}
+.section3
+  .row-second
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .half-left
+  .comment {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.section3 .row-second .swiper .swiper-wrapper .swiper-slide .half-left .from {
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 30px;
+  display: block;
+}
+.section3
+  .row-second
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .half-left
+  .link-youtube {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 480px;
+  top: 370px;
+}
+.section3
+  .row-second
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .half-left
+  .link-youtube
+  .circle-play {
 }
 .section3 .row-second .swiper .swiper-wrapper .swiper-slide .half-right {
   width: 50%;
   height: 100%;
   background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3
+  .row-second
+  .swiper
+  .swiper-wrapper
+  .swiper-slide.century-fox
+  .half-right {
+  background-image: url(../../images/section3-logo1-back.jpg);
+}
+.section3
+  .row-second
+  .swiper
+  .swiper-wrapper
+  .swiper-slide.abinbev
+  .half-right {
+  background-image: url(../../images/section3-logo2-back.jpg);
+}
+.section3
+  .row-second
+  .swiper
+  .swiper-wrapper
+  .swiper-slide.capitalone
+  .half-right {
+  background-image: url(../../images/section3-logo3-back.jpg);
+}
+.section3
+  .row-second
+  .swiper
+  .swiper-wrapper
+  .swiper-slide.zendesk
+  .half-right {
+  background-image: url(../../images/section3-logo4-back.jpg);
+}
+.section3 .row-second .swiper .swiper-wrapper .swiper-slide.veeva .half-right {
+  background-image: url(../../images/section3-logo5-back.jpg);
 }
 
-.section3 .pagination {
+.section3 .swiper-pagination {
   margin-top: 90px;
   height: 102px;
-  width: 100%;
-  background-color: aqua;
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 100px 100px; */
+  gap: 50px;
+}
+
+.section3 .swiper-pagination .swiper-pagination-bullet:nth-child(1) {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  width: 68px;
+  height: 58px;
+  background-image: url(../../images/section3-logo1-colored.png);
+  background-size: cover;
+}
+.section3 .swiper-pagination .swiper-pagination-bullet:nth-child(2) {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  width: 114px;
+  height: 24px;
+  background-image: url(../../images/section3-logo2-colored.png);
+  background-size: cover;
+}
+.section3 .swiper-pagination .swiper-pagination-bullet:nth-child(3) {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  width: 75px;
+  height: 27px;
+  background-image: url(../../images/section3-logo3-colored.png);
+  background-size: cover;
+}
+.section3 .swiper-pagination .swiper-pagination-bullet:nth-child(4) {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  width: 74px;
+  height: 52px;
+  background-image: url(../../images/section3-logo4-colored.jpg);
+  background-size: cover;
+}
+.section3 .swiper-pagination .swiper-pagination-bullet:nth-child(5) {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100px;
+  height: 24px;
+  background-image: url(../../images/section3-logo5-colored.png);
+  background-size: cover;
 }

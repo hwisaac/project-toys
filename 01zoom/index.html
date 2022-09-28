@@ -16,9 +16,11 @@
     <!-- 스크립트  -->
     <!-- SWIPER : 슬라이드 모션-->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script defer src="./js/main.js"></script>
   </head>
@@ -118,32 +120,189 @@
       <div class="row-second">
         <div class="swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide century-fox">
               <div class="half-left">
-                <img src="#" class="circle-pic" alt="" />
-                <p class="comment"></p>
-                <span class="from"></span>
-                <img src="#" class="circle-play" alt="" />
+                <img
+                  src="./images/section3-logo1-face.png"
+                  class="circle-pic"
+                  alt=""
+                />
+                <p class="comment">
+                  "아마 Zoom은 20년 동안 제가 Fox에서 본 것 중 가장 사용하기
+                  쉬운 공동 작업 도구일 것입니다. Zoom보다 더 사람들을 가깝게
+                  묶어 준 도구는 이제껏 없었던 것 같아요."
+                </p>
+                <span class="from">21st Century Fox의 Doug Goetz</span>
+                <a href="javascript:void(0)" class="link-youtube">
+                  <img
+                    src="./images/section3-playBtn.jpg"
+                    class="circle-play"
+                    alt=""
+                /></a>
               </div>
-              <div class="half-right"></div>
+              <div class="half-right">
+                <img src="./images/section3-logo1-white.png" class="centered-logo"></img>
+              </div>
+            </div>
+            <div class="swiper-slide abinbev">
+              <div class="half-left">
+                <img
+                  src="./images/section3-logo2-face.png"
+                  class="circle-pic"
+                  alt=""
+                />
+                <p class="comment">
+                  "Zoom은 놀랍도록 쉽게 사용할 수 있어요. 그냥 다운로드해서 클릭하기만 하면 끝이죠. 비행기, 자동차, 집, 사무실 등 어디에서나 저는 Zoom을 사용합니다."
+                </p>
+                <span class="from">AB in Bev의 Jelena Joffe</span>
+                <a href="javascript:void(0)" class="link-youtube">
+                  <img
+                    src="./images/section3-playBtn.jpg"
+                    class="circle-play"
+                    alt=""
+                /></a>
+              </div>
+              <div class="half-right">
+                <img src="./images/section3-logo2-white.png" class="centered-logo"></img>
+              </div>
+            </div>
+            <div class="swiper-slide capitalone">
+              <div class="half-left">
+                <img
+                  src="./images/section3-logo3-face.png"
+                  class="circle-pic"
+                  alt=""
+                />
+                <p class="comment">
+                  Zoom was the easiest part of [our digital transformation] — it was the intuitive nature of the experience… People just picked it up, adopted it, and automatically saw it as better than the prior solution.
+                </p>
+                <span class="from">Fred Love</span>
+                <a href="javascript:void(0)" class="link-youtube">
+                  <img
+                    src="./images/section3-playBtn.jpg"
+                    class="circle-play"
+                    alt=""
+                /></a>
+              </div>
+              <div class="half-right">
+                <!-- 3번째는 로고 없음 -->
+              </div>
+            </div>
+            <div class="swiper-slide zendesk">
+              <div class="half-left">
+                <img
+                  src="./images/section3-logo4-face.png"
+                  class="circle-pic"
+                  alt=""
+                />
+                <p class="comment">
+                  "정말 놀라운 품질을 보여줬어요. 덕분에 회사 전체에서 아주 놀라운 결과를 얻었습니다."
+                </p>
+                <span class="from">Zendesk의 Rujul Pathak</span>
+                <a href="javascript:void(0)" class="link-youtube">
+                  <img
+                    src="./images/section3-playBtn.jpg"
+                    class="circle-play"
+                    alt=""
+                /></a>
+              </div>
+              <div class="half-right">
+                <img src="./images/section3-logo4-white.png" class="centered-logo"></img>
+              </div>
+            </div>
+            <div class="swiper-slide veeva">
+              <div class="half-left">
+                <img
+                  src="./images/section3-logo5-face.png"
+                  class="circle-pic"
+                  alt=""
+                />
+                <p class="comment">
+                  "Zoom을 사용해 더욱 원활하게 협력할 수 있게 되었습니다."
+                </p>
+                <span class="from">Zendesk의 Rujul Pathak</span>
+                <a href="javascript:void(0)" class="link-youtube">
+                  <img
+                    src="./images/section3-playBtn.jpg"
+                    class="circle-play"
+                    alt=""
+                /></a>
+              </div>
+              <div class="half-right">
+                <img src="./images/section3-logo5-white.png" class="centered-logo"></img>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="pagination">section3 PAGINATION</div>
+      <div class="swiper-pagination pagination"></div>
     </section>
 
     <!-- SECTION4  -->
     <section class="section4">
       <div class="column-left">
         <h2>첨단 기술 회사가 신뢰하는 Zoom</h2>
-        <div class="pagination"></div>
+        <div class="s4-pagination"></div>
       </div>
       <div class="column-right">
         <div class="swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"></div>
+            <div class="swiper-slide">
+              <div class="container">
+              <img src="./images/section4-logo1.png" alt="">
+              </div>
+              <div class="container">
+              <img src="./images/section4-logo2.png" alt="">
+                </div>
+              <div class="container">
+                <img src="./images/section4-logo3.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <img src="./images/section4-logo4.png" alt="">
+              </div>
+              <div class="container">
+                <img src="./images/section4-logo5.png" alt="">
+              </div>
+              <div class="container">
+                <img src="./images/section4-logo6.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+              <img src="./images/section4-logo7.png" alt="">
+              </div>
+              <div class="container">
+              <img src="./images/section4-logo8.png" alt="">
+                </div>
+              <div class="container">
+                  <img src="./images/section4-logo9.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+              <img src="./images/section4-logo10.png" alt="">
+              </div>
+              <div class="container">
+              <img src="./images/section4-logo11.png" alt="">
+                </div>
+              <div class="container">
+                  <img src="./images/section4-logo12.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+              <img src="./images/section4-logo13.png" alt="">
+              </div>
+              <div class="container">
+              <img src="./images/section4-logo14.png" alt="">
+                </div>
+              <div class="container">
+                  <img src="./images/section4-logo15.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
       </div>
