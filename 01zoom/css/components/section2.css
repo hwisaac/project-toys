@@ -1,6 +1,9 @@
 .section2 {
   margin-top: 300px;
   height: 800px;
+  /* border: 1px solid red; */
+  background-image: url(../../images/bg-ellipse.png);
+  background-repeat: no-repeat;
 }
 .section2 .inner {
   display: flex;
