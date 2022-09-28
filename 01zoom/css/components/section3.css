@@ -157,7 +157,7 @@
   .row-second
   .swiper
   .swiper-wrapper
-  .swiper-slide:nth-child(1)
+  .swiper-slide.century-fox
   .half-right {
   background-image: url(../../images/section3-logo1-back.jpg);
 }
@@ -165,7 +165,7 @@
   .row-second
   .swiper
   .swiper-wrapper
-  .swiper-slide:nth-child(2)
+  .swiper-slide.abinbev
   .half-right {
   background-image: url(../../images/section3-logo2-back.jpg);
 }
@@ -173,7 +173,7 @@
   .row-second
   .swiper
   .swiper-wrapper
-  .swiper-slide:nth-child(3)
+  .swiper-slide.capitalone
   .half-right {
   background-image: url(../../images/section3-logo3-back.jpg);
 }
@@ -181,16 +181,11 @@
   .row-second
   .swiper
   .swiper-wrapper
-  .swiper-slide:nth-child(4)
+  .swiper-slide.zendesk
   .half-right {
   background-image: url(../../images/section3-logo4-back.jpg);
 }
-.section3
-  .row-second
-  .swiper
-  .swiper-wrapper
-  .swiper-slide:nth-child(5)
-  .half-right {
+.section3 .row-second .swiper .swiper-wrapper .swiper-slide.veeva .half-right {
   background-image: url(../../images/section3-logo5-back.jpg);
 }
 

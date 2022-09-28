@@ -26,7 +26,9 @@ header {
   font-weight: 400;
   font-size: 12px;
 }
-
+.header__container1 .inner ul li:hover {
+  cursor: pointer;
+}
 .header__container2 {
   background-color: white;
   height: 60px;
