@@ -4,18 +4,18 @@ body {
   align-items: center;
   color: #343d58;
 }
-.score {
+.panel {
   display: flex;
   margin: 20px;
 }
-.score .you {
-  width: 150px;
-  height: 150px;
+.panel .you {
+  width: 100px;
+  height: 100px;
   background-color: aquamarine;
 }
-.score .enemy {
-  width: 150px;
-  height: 150px;
+.panel .enemy {
+  width: 100px;
+  height: 100px;
   background-color: cadetblue;
 }
 
@@ -23,9 +23,19 @@ body {
   display: flex;
   gap: 10px;
 }
-.container .item {
+
+.container .scissor {
+  object-fit: cover;
   width: 100px;
   height: 100px;
-
-  background-color: beige;
+}
+.container .rock {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+.container .paper {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
 }
