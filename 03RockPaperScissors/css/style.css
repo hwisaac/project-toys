@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #343d58;
+}
+.score {
+  display: flex;
+  margin: 20px;
+}
+.score .you {
+  width: 150px;
+  height: 150px;
+  background-color: aquamarine;
+}
+.score .enemy {
+  width: 150px;
+  height: 150px;
+  background-color: cadetblue;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+.container .item {
+  width: 100px;
+  height: 100px;
+
+  background-color: beige;
+}
