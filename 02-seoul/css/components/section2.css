@@ -147,7 +147,6 @@
   display: block;
 }
 .section2 .inner-left .display .display-down .nav-bar {
-  z-index: 9;
   width: 100%;
   height: 36px;
   position: absolute;
