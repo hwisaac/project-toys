@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: #343d58;
+}
+.text {
+  color: #343d58;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+.container .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .item:nth-child(2n) {
+  background-color: #fff5eb;
+}
+.container .item:nth-child(2n + 1) {
+  background-color: #deedf0;
+}

@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #343d58;
+}
+.panel {
+  display: flex;
+  margin: 20px;
+}
+.panel .you {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+}
+.panel .enemy {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.container .scissor {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+.container .rock {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+.container .paper {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
