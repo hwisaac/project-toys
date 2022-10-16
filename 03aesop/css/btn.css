@@ -1,0 +1,62 @@
+.btn {
+  display: flex;
+  border: 1px solid white;
+  height: 60px;
+  width: 300px;
+  align-items: center;
+  padding: 0 22px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.btn.btn--reverse {
+  background-color: #fffef2;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.btn.btn--reverse:hover {
+  background-color: #333333;
+  border: none;
+  color: white;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  z-index: 8;
+}
+.prev-btn {
+  left: -80px;
+  transition: 0.5s;
+}
+.prev-btn.show {
+  left: 0;
+  transition: 0.5s;
+}
+.next-btn {
+  right: -80px;
+  transition: 0.5s;
+}
+.next-btn.show {
+  right: 0;
+}
+.next-btn.swiper-button-disabled {
+  right: -80px;
+  transition: 0.5s;
+}
+.prev-btn.swiper-button-disabled {
+  left: -80px;
+  transition: 0.5s;
+}

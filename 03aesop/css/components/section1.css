@@ -1,0 +1,31 @@
+.section1 {
+  /* margin-top: 77px; */
+  height: 550px;
+  width: 100%;
+  background-image: url(../../images/section1-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.section1 .inner {
+  height: 100%;
+  padding: 200px 50px;
+  box-sizing: border-box;
+}
+.section1 .inner svg {
+}
+.section1 .inner .container {
+  margin-left: 100px;
+}
+.section1 .inner .container .small {
+  font-weight: 400;
+}
+.section1 .inner .container .title {
+  font-size: 30px;
+  margin: 20px 0;
+}
+.section1 .inner .container .description {
+  margin-bottom: 30px;
+}
+.section1 .inner .container .btn {
+}
