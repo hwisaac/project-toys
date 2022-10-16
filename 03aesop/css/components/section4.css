@@ -1,0 +1,29 @@
+.section4 {
+  height: 511px;
+  width: 100%;
+  margin-top: 100px;
+}
+.section4 .inner-right {
+}
+.section4 .inner-right .col-left {
+  height: 100%;
+}
+.section4 .inner-right .col-left img {
+  height: 100%;
+}
+.section4 .inner-right .col-right {
+  padding-left: 50px;
+  width: 405px;
+  box-sizing: border-box;
+}
+.section4 .inner-right .col-right .title {
+  font-size: 30px;
+  margin-top: 30px;
+}
+.section4 .inner-right .col-right .description {
+  margin-top: 30px;
+  font-size: 16px;
+}
+.section4 .inner-right .col-right .btn {
+  margin-top: 30px;
+}

@@ -1,0 +1,36 @@
+.section3 {
+  height: 511px;
+  width: 100%;
+  margin-top: 100px;
+}
+.section3 .inner-left {
+}
+.section3 .inner-left .col-left {
+  width: 405px;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  padding-right: 50px;
+}
+.section3 .inner-left .col-left .small {
+}
+.section3 .inner-left .col-left .title {
+  font-size: 30px;
+  margin-top: 30px;
+}
+.section3 .inner-left .col-left .description {
+  margin-top: 30px;
+  font-size: 16px;
+}
+.section3 .inner-left .col-left .btn {
+  margin-top: 30px;
+}
+.section3 .inner-left .col-right {
+}
+.section3 .inner-left .col-right .video {
+}
+.section3 .inner-left .col-right video {
+  height: 100%;
+}
+/* .section3 .inner-left .col-right .video source{
+    height: 100px;
+} */

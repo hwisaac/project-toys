@@ -1,0 +1,185 @@
+footer {
+  margin-top: 200px;
+  width: 100%;
+  padding: 40px;
+  background-color: #252525;
+  /* background-color: gray; */
+  color: white;
+  box-sizing: border-box;
+}
+
+footer .row {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+footer .row ul.list {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  /* border: 1px solid red; */
+}
+footer .row ul:nth-child(1) {
+  width: 537px;
+}
+footer .row ul:nth-child(2),
+footer .row ul:nth-child(3),
+footer .row ul:nth-child(4) {
+  width: 250px;
+}
+footer .row ul.list li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+footer .row ul.list li.title {
+  font-size: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+  cursor: auto;
+}
+footer .row ul.list li.email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .row ul.list li.li-inline {
+  display: inline;
+}
+footer .row ul.list li#require1 {
+  /* border: 1px solid white; */
+}
+footer .row ul.list li.email .textbox {
+  width: 100%;
+  display: flex;
+  height: 37px;
+  border: 1px solid white;
+  padding-left: 10px;
+}
+footer .row ul.list li.email.border--wine .textbox {
+  border: 1px solid #ea6956;
+}
+footer .row ul.list li.email .textbox input {
+  background-color: #252525;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  color: white;
+}
+footer .row ul.list li.email .textbox input::placeholder {
+  color: white;
+  transition: color 0.5s;
+}
+footer .row ul.list li.email .textbox input:focus {
+}
+footer .row ul.list li.email .textbox input:focus::placeholder {
+  color: #252525;
+}
+footer .row ul.list li.email span.material-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
+  width: 37px;
+  background-color: #252525;
+  color: white;
+  border: 1px solid white;
+  border-left: none;
+}
+footer .row ul.list .email.border--wine span.material-icons {
+  border: 1px solid #ea6956;
+  border-left: none;
+}
+
+/* footer .row ul.list li.email span.material-icons.north_east {
+  font-size: 50px;
+} */
+footer .row ul.list li div.contract {
+  border: 1px solid white;
+  padding: 10px;
+  max-height: 50px;
+  width: 100%;
+  overflow-y: scroll;
+}
+footer .row ul.list li div.contract2 {
+  border: 1px solid white;
+  padding: 10px;
+  max-height: 50px;
+  width: 100%;
+}
+footer .row-second {
+}
+footer .row-second ul {
+}
+footer .row-second ul li {
+}
+footer .row-second ul li a {
+  color: white;
+  display: inline;
+  text-decoration: underline;
+}
+.subfooter {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  font-size: 16px;
+  padding-left: 40px;
+  color: white;
+  border-top: 2px solid white;
+  background-color: #252525;
+}
+footer input[type='checkbox'] {
+  display: none;
+}
+footer input[type='checkbox'] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+footer input[type='checkbox'] + label::before {
+  /* 가짜 체크박스 */
+  content: '';
+  display: inline-block;
+  width: 15px; /* 체크박스의 너비를 지정 */
+  height: 15px; /* 체크박스의 높이를 지정 */
+  line-height: 15px; /* 세로정렬을 위해 높이값과 일치 */
+  margin: -2px 8px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  background: #252525;
+  border: 1px solid white;
+  border-radius: 0;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}
+footer input[type='checkbox']:active + label::before,
+footer input[type='checkbox']:active + label:active:before {
+  border: 1.5px solid white;
+}
+footer input[type='checkbox']:checked + label:before {
+  /* 체크박스를 체크했을때 */
+  content: '\2714'; /* 체크표시 유니코드 사용 */
+  color: white;
+  background: #252525;
+  border-color: white;
+}
+footer .row .list .error-msg {
+  color: #ea6956;
+  position: relative;
+  top: -10px;
+  display: none;
+}
+footer label {
+  position: relative;
+  left: 30px;
+}

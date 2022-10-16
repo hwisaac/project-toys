@@ -1,0 +1,62 @@
+.section5 {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.section5 .row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.section5 .row h2 {
+  margin-left: 70px;
+  position: relative;
+}
+.section5 .row .swiper {
+  margin-top: 100px;
+  width: 100%;
+}
+.section5 .row .swiper-wrapper {
+  gap: 100px;
+}
+.section5 .row .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+}
+.section5 .row .swiper-slide img {
+  width: 375px;
+  height: 375px;
+  cursor: pointer;
+}
+.section5 .row .swiper-slide .title {
+}
+.section5 .row .swiper-slide:hover .title {
+  text-decoration: underline;
+}
+.section5 .row .swiper-slide .description {
+}
+
+.section5 .row .prev-btn,
+.section5 .row .next-btn {
+  top: 50%;
+}
+
+.section5 .pagination-bars {
+  height: 3px;
+  width: 80vw;
+  margin-top: 30px;
+  display: flex;
+  margin-top: 70px;
+  background-color: #cccbc1;
+  border-radius: 2px;
+}
+
+.section5 .pagination-bars .bar.active {
+  background-color: #51514d;
+}
